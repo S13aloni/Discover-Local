@@ -1,0 +1,93 @@
+.login-container-weblog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-travel-india-with-ancient-and-modern-building-with-water-reflection-image_1388690.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.login-box-weblog {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better contrast */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    max-width: 600px; /* Increased width */
+    width: 100%; /* Full width within max-width */
+    animation: fadeIn 0.8s ease-out;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-box-weblog {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .input-container-weblog input {
+        padding: 8px; /* Adjust input padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .button-weblog {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+.input-container-weblog {
+    margin-bottom: 15px;
+}
+
+.input-container-weblog input {
+    width: 95%; /* Full width of the container */
+    padding: 10px;
+    border: 1px solid #00796b; /* Change border color to match button */
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+.button-weblog {
+    background-color: #007BFF; /* Blue color for the button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full width of the button */
+}
+
+.button-weblog:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.message-weblog {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+.footer-weblog {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-weblog a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

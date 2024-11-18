@@ -1,0 +1,117 @@
+/* Main container styling */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  /* Image container styling */
+  .image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image covers the entire screen */
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+  }
+  
+  /* Pseudo-element for blackish transparency */
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Blackish overlay with 30% opacity */
+    transition: opacity 1s ease; /* Smooth transition for overlay */
+  }
+  
+  /* Details container styling */
+  .details-container {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: white;
+    padding: 20px;
+    max-width: 700px;
+    animation: fadeIn 1s ease-in-out; /* Fade in for details */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: left;
+    flex-direction: column; /* Ensure that elements stack vertically */
+  }
+  
+  .image-title {
+    font-size: 5rem; /* Larger font size for the title */
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: left;
+    animation: slideIn 1s ease-in-out; /* Slide in animation for title */
+  }
+  
+  .image-description {
+    font-size: 1.5rem; /* Adjust description size */
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    text-align: left;
+    animation: slideIn 1s ease-in-out; /* Slide in animation for description */
+  }
+  
+  /* Animated View More button */
+  .view-more-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: transparent; /* Transparent background */
+    border: 3px solid white; 
+
+    /* border: 3px solid transparent;  */
+    /* Start with no visible border */
+    border-image: white; /* Gradient border */
+
+    /* border-image: linear-gradient(to right, #1e90ff, #00bfff, #87cefa) 1;  */
+    /* Gradient border */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and color */
+    /* position: absolute;  */
+    /* Positioning */
+    left: 5%; /* Position from the left */
+    bottom: 5%; /* Position from the bottom */
+    align-self: flex-start;
+  }
+  
+  /* Hover effect for the button */
+  .view-more-button:hover {
+    background-color: white; /* Change background to white */
+    color: black; /* Change text color to black */
+    border: 3px solid transparent; /* Reset border */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px); /* Slide from above */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1; /* End visible */
+    }
+  }
+  

@@ -1,0 +1,119 @@
+/* Main container for the block */
+.destination-block-home {
+    position: absolute;
+    bottom: -230px; /* Overlaps the image slider */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 1200px;
+    z-index: 2; /* Ensure it appears above the image slider */
+}
+
+/* Block Title */
+.block-title-home {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Form container */
+.form-container-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between form elements */
+}
+
+/* Form group styling */
+.form-group-home {
+    flex: 1 1 25%; /* Reduced width for dropdowns */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form group label styling */
+.form-group-home label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.icon-home {
+    margin-right: 5px;
+    color: #007bff; /* Icon color */
+}
+
+.search-icon-home {
+    margin-left: 8px;
+    color: white; /* Icon color */
+    font-size: 1.2rem; /* Adjust the icon size */
+}
+
+/* Dropdown styling */
+.dropdown-home {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    width: 100%; /* Full width within the flex item */
+    transition: border-color 0.3s ease;
+}
+
+.dropdown-home:focus {
+    border-color: #007bff;
+}
+
+/* Search Button */
+.search-button-home {
+    display: inline-flex; /* Flex container for text and icon */
+    align-items: center; /* Vertically center the icon and text */
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center aligns the button in the line */
+    margin-left: 5px; /* Space between dropdowns and button */
+}
+
+/* Search Button Icon */
+.search-button-home .search-icon-home {
+    margin-left: 10px; /* Adjust spacing between text and icon */
+    color: white;
+    font-size: 1.2rem; /* Adjust the icon size if needed */
+}
+
+/* On hover, change background color */
+.search-button-home:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .form-container-home {
+        flex-direction: column;
+    }
+
+    .form-group-home {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0;
+    }
+
+    .search-button-home {
+        width: 100%; /* Full width on mobile */
+        padding: 15px;
+        justify-content: center; /* Center icon and text on mobile */
+    }
+}

@@ -1,0 +1,90 @@
+.popular-destinations {
+    padding: 150px 20px; /* Increased top padding to bring cards down */
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 100%;
+    /* margin-bottom: -150px; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    color: teal;
+}
+
+.details {
+    margin-top: 20px;
+    text-align: left;
+    width: 500px;
+}
+
+.details-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.details-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.destination-card {
+    background: #e0f7fa; /* Light teal background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-bottom: 10px; /* Space for button */
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.view-more-buttonPD {
+    padding: 10px 20px;
+    background: transparent;
+    color: black; /* Default button text color */
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #1e90ff, #00bfff, #87cefa) 1;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+}
+
+.view-more-buttonPD:hover {
+    background-color: #00bfff; /* Teal background on hover */
+    color: black; /* Ensure text stays black on hover */
+}

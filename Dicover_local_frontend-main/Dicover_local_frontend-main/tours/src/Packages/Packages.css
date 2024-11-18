@@ -1,0 +1,91 @@
+/* Styling for the package cards */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased spacing between cards */
+    justify-content: center;
+  }
+  
+  .package-card {
+    width: 350px; /* Increased size of the card */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+  }
+  
+  .package-image-container {
+    height: 250px; /* Adjusted for larger card */
+    overflow: hidden;
+  }
+  
+  .package-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .package-card:hover .package-image {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .package-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .package-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .rating-number {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .package-card .price {
+    display: inline-flex; /* Aligns items inline without spacing */
+    align-items: center; /* Vertically centers the rupee icon and amount */
+  }
+  
+  .package-card .price .amount {
+    margin-left: 0.1rem; /* Tiny space between Rupee symbol and amount, adjust if needed */
+    font-size: 1.2rem; /* Adjust the size to your preference */
+  }
+  
+  .package-card .price svg {
+    font-size: 1.2rem; /* Adjust icon size to match the text size */
+  }
+  
+  .book-now-btn {
+    background-color: white;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px; /* Space between price and button */
+  }
+  
+  .book-now-btn:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05); /* Animation on hover */
+  }
+  .h1-pack, .h2-pack, .h3-pack {
+    font-family: 'Georgia', serif; /* Use Georgia or a similar serif font */
+  }

@@ -1,0 +1,153 @@
+.tour-guide-swiper-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.h1-guide {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.h2-guide {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.tour-guide-card {
+    position: relative;
+    background-color: #f0faff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.tour-guide-card:hover {
+    transform: translateY(-10px);
+}
+
+.background-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.guide-details {
+    margin-top: -60px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.guide-details h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.guide-details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #0077cc;
+}
+
+/* Mobile and Tablet Responsive */
+@media (max-width: 768px) {
+    .h1-guide {
+        font-size: 2rem;
+    }
+
+    .h2-guide {
+        font-size: 1.25rem;
+    }
+
+    .tour-guide-card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .background-image {
+        height: 180px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .guide-details h3 {
+        font-size: 16px;
+    }
+
+    .guide-details p {
+        font-size: 12px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 576px) {
+    .h1-guide {
+        font-size: 1.75rem;
+    }
+
+    .h2-guide {
+        font-size: 1.15rem;
+    }
+
+    .tour-guide-card {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .background-image {
+        height: 150px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .guide-details h3 {
+        font-size: 14px;
+    }
+
+    .guide-details p {
+        font-size: 11px;
+    }
+
+    .social-icons i {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+}

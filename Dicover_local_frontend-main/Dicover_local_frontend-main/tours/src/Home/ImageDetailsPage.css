@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Container for the entire page */
+.image-details-container-dest {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start for better layout */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 5px;
+  background-color: white;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Section containing the images on the left */
+.image-section-dest {
+  position: relative;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 40%; /* Max width for larger screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Base styling for images */
+.image-dest {
+  border: 5px solid #fff; /* Add white border around images */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Styling for the first image */
+.image-1-dest {
+  position: relative; /* Change to relative for responsive layout */
+  height: 300px;
+  width: 400px;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Styling for the second image (overlapping the first) */
+.image-2-dest {
+  position: relative; /* Change to relative for responsive layout */
+  height: 400px;
+  width: 380px;
+  margin-top: -150px; /* Adjust margin to create overlap */
+  margin-left: 40%; /* Shift slightly to the right for overlap */
+}
+
+/* Styling for the third image (overlapping the second) */
+.image-3-dest {
+  position: relative; /* Change to relative for responsive layout */
+  height: 260px;
+  width: 360px;
+  margin-top: -200px; /* Adjust margin to create overlap */
+  margin-left: 20px; /* Shift slightly to the right for overlap */
+}
+
+/* Details section on the right side */
+.details-section-dest {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 40%; /* Max width for larger screens */
+  padding-left: 20px;
+  margin-right: 70px;
+  margin-top: -5%;
+}
+
+/* Details item styles */
+.details-item-dest {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  margin-bottom: 15px; /* Space between items */
+}
+
+.icon-container-dest {
+  width: 40px; /* Icon size */
+  height: 40px; /* Icon size */
+  background-color: #b2e0e6; /* Light teal background */
+  border-radius: 50%; /* Circle shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; /* Space between icon and text */
+  color: teal; /* Teal color for icon */
+  font-size: 1.7rem; /* Icon size */
+  transition: transform 0.6s; /* Smooth transition */
+  transform-style: preserve-3d; /* Preserve 3D effect for flip */
+}
+
+/* Add hover effect for flipping */
+.icon-container-dest:hover {
+  transform: rotateY(180deg); /* Flip the icon horizontally */
+}
+
+.det-desc-dest{
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+.details-text-dest {
+  display: flex;
+  flex-direction: column; /* Stack title and paragraph vertically */
+  text-align: left;
+  
+}
+
+.details-title-dest {
+  font-size: 1.5rem;
+  color: teal; /* Teal color for text */
+  margin: 0; /* Remove default margin */
+}
+
+.details-paragraph-dest {
+  font-size: 1rem; /* Adjust the font size */
+  color: #666; /* A softer color for the description */
+  margin-top: 5px; /* Space between title and description */
+}
+
+.details-heading-top-dest {
+  text-align: left;
+  font-family: 'Dancing Script', cursive; /* Applying handwriting font */
+  font-size: 4rem;
+  color: teal;
+  margin-top: 10px;
+  margin-bottom: -30px; /* Adjust as needed */
+}
+
+.details-heading-dest {
+  text-align: left;
+  font-size: 4rem;
+  color: teal;
+  margin-bottom: 20px; /* Space after the heading */
+}
+
+.details-description-dest{
+  text-align: left;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-section-dest {
+      max-width: 100%; /* Allow full width on mobile */
+      display: block; /* Stack images vertically */
+      align-items: center; /* Center align images */
+  }
+
+  .image-1-dest,
+  .image-2-dest,
+  .image-3-dest {
+      margin: 10px 0; /* Add vertical margin between images */
+      width: 90%; /* Make images responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  
+  .details-section-dest {
+    max-width: 100%; /* Allow full width on mobile */
+    padding-left: 0; /* Remove left padding on mobile */
+}
+
+.details-title-dest {
+    font-size: 1.3rem; /* Smaller title size for mobile */
+}
+}

@@ -1,0 +1,177 @@
+.package-detail-container {
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.package-detail-title {
+  font-size: 2.5em;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Full width title */
+}
+
+/* For the images section */
+.package-detail-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Full width for images */
+}
+
+.detail-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Create two columns: package details and available slots */
+.package-detail-info-slots {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensures full width */
+  margin-top: 20px;
+}
+
+/* Left column for package details */
+.package-detail-info {
+  width: 55%; /* Adjust the width for the left column */
+  margin-right: 20px;
+  color: #333;
+}
+
+.package-detail-info p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.package-detail-info p svg {
+  margin-right: 10px;
+  color: #007BFF;
+  font-size: 1.3em;
+}
+
+/* Right column for available slots */
+/* Right column for available slots */
+.slots-section {
+  width: 40%; /* Adjust the width for the right column */
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.slots-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slot {
+  background-color: rgb(192, 192, 241);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.slot-icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: black; /* Set icon color to black */
+  font-size: 1.2em; /* Adjust font size */
+}
+
+/* Styling for itinerary section */
+.itinerary-section {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.itinerary-days {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.itinerary-day {
+  width: 30%;
+  text-align: center;
+}
+
+.itinerary-image-container {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.itinerary-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.itinerary-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 111, 158, 0.843);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(131, 115, 115);
+  font-size: 1.3em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.itinerary-image-container:hover .itinerary-description {
+  opacity: 0.9;
+}
+
+.itinerary-image-container:hover .itinerary-image {
+  filter: blur(1px) brightness(0.5);
+}
+
+.itinerary-day h3 {
+  font-size: 1.5em;
+  color: #f6f6f6;
+}
+
+.itinerary-day p {
+  font-size: 1.2em;
+  color: #000000e7;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .package-detail-info-slots {
+      flex-direction: column;
+  }
+
+  .package-detail-info, .slots-section {
+      width: 100%;
+  }
+
+  .itinerary-day {
+      width: 100%;
+  }
+}

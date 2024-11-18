@@ -1,0 +1,32 @@
+/* Testimonials Section */
+.div-test{
+    background-color: rgb(220, 251, 251);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.testimonials-section {
+    text-align: center;
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card span {
+    font-weight: bold;
+  }

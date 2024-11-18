@@ -1,0 +1,211 @@
+/* Container */
+.testimonial-slider-container {
+  padding: 3rem 1.5rem;
+  background-color: #f9fafc;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+.testimonial-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.testimonial-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 80vw;
+  margin: 0 auto 1.5rem auto; /* Remove excess space below and maintain balance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px); /* Hover effect for interactivity */
+}
+
+/* Layout */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #00849b;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+}
+
+.testimonial-text {
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Text Styling */
+.testimonial-name {
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #22303f;
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  color: #838383;
+}
+
+.testimonial-rating {
+  color: #ffcc00; /* Star color */
+  margin: 0.75rem 0;
+}
+
+.testimonial-review {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #4d4d4d;
+  line-height: 1.6;
+}
+
+/* Dots Styling */
+.slick-dots {
+  bottom: -30px; /* Adjusted to prevent too much space below */
+}
+
+.slick-dots li button:before {
+  font-size: 0.75rem;
+  color: #00849b; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333; /* Active dot color */
+}
+
+.slick-prev, .slick-next {
+  display: none !important; /* Hides next/prev buttons */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .testimonial-title {
+    font-size: 2.25rem; /* Adjust title size */
+  }
+
+  .testimonial-subtitle {
+    font-size: 1.125rem; /* Adjust subtitle size */
+  }
+
+  .testimonial-card {
+    padding: 1.25rem; /* Reduce padding */
+  }
+
+  .testimonial-name {
+    font-size: 1.25rem; /* Adjust name size */
+  }
+
+  .testimonial-role {
+    font-size: 0.875rem; /* Adjust role size */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider-container {
+    padding: 2.5rem 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .testimonial-card {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+    margin-bottom: 1rem; /* Reduce margin for smaller screens */
+  }
+
+  .testimonial-content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+  }
+
+  .testimonial-image {
+    margin: 0 0 1rem 0; /* Margin at the bottom */
+  }
+
+  .testimonial-name {
+    font-size: 1.125rem; /* Further adjust name size */
+  }
+
+  .testimonial-role {
+    font-size: 0.875rem; /* Further adjust role size */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-title {
+    font-size: 2rem; /* Further reduce title size */
+  }
+
+  .testimonial-subtitle {
+    font-size: 1rem; /* Further reduce subtitle size */
+  }
+
+  .testimonial-card {
+    padding: 1.25rem; /* Further reduce padding */
+  }
+
+  .testimonial-review {
+    font-size: 0.875rem; /* Adjust review font size */
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 400px) {
+  .testimonial-title {
+    font-size: 1.75rem;
+  }
+
+  .testimonial-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+    margin-bottom: 0.75rem; /* Reduce margin */
+  }
+
+  .testimonial-review {
+    font-size: 0.75rem;
+  }
+
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.75rem;
+  }
+}

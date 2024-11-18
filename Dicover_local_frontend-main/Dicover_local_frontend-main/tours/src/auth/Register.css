@@ -1,0 +1,115 @@
+.register-container-webreg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-travel-india-with-ancient-and-modern-building-with-water-reflection-image_1388690.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.register-box-webreg {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better contrast */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    max-width: 600px; /* Increased width */
+    width: 100%; /* Full width within max-width */
+    animation: fadeIn 0.8s ease-out;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .register-box-webreg {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .input-container-webreg input {
+        padding: 8px; /* Adjust input padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .button-webreg {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+.input-container-webreg {
+    margin-bottom: 15px;
+}
+
+.input-container-webreg input,
+.input-container-webreg select {
+    width: 95%; /* Full width of the container */
+    padding: 10px;
+    border: 1px solid #00796b; /* Change border color to match button */
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+.input-container-webreg select {
+    /* Dropdown styles as defined above */
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="%23007BFF" d="M4 6l4 4 4-4z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 98%;
+}
+
+.input-container-webreg select:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+    outline: none; /* Remove default outline */
+}
+
+.input-container-webreg select:hover {
+    border-color: #0056b3; /* Change border color on hover */
+}
+
+.button-webreg {
+    background-color: #007BFF; /* Blue color for the button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full width of the button */
+}
+
+.button-webreg:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.message-webreg {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif; /* Change font to sans-serif */
+}
+
+.footer-webreg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-webreg a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.counters-section {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.counters-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.counter {
+    margin: 20px;
+    width: 150px; /* Adjust width for responsive design */
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 236, 236);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+    border: 2px solid teal;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.counter-value {
+    font-size: 40px;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.counter-title {
+    font-size: 25px;
+    color: black;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.h2-exp {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: teal;
+    margin-bottom: 40px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (tablets and phones) */
+@media (max-width: 768px) {
+    .circle {
+        width: 200px; /* Reduce circle size for smaller screens */
+        height: 200px;
+    }
+
+    .circle::before {
+        top: -20px; /* Adjust border position */
+        left: -20px;
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+    }
+
+    .counter-value {
+        font-size: 30px; /* Reduce font size for counters */
+    }
+
+    .counter-title {
+        font-size: 20px; /* Reduce title size */
+    }
+
+    .h2-exp {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    .counters-container {
+        margin-right: 0px; /* Adjust margin for small screens */
+    }
+}
+
+/* For extra small screens (phones) */
+@media (max-width: 480px) {
+    .circle {
+        width: 150px; /* Further reduce circle size for phones */
+        height: 150px;
+    }
+
+    .circle::before {
+        top: -15px;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+    }
+
+    .counter-value {
+        font-size: 25px; /* Further reduce font size for counters */
+    }
+
+    .counter-title {
+        font-size: 18px; /* Further reduce title size */
+    }
+
+    .h2-exp {
+        font-size: 2rem; /* Further reduce heading size */
+    }
+
+    .counters-container {
+        flex-direction: column; /* Stack counters vertically */
+        align-items: center;
+    }
+
+    .counter {
+        margin: 10px 0; /* Adjust margins for stacked counters */
+        width: 100%; /* Make counters full-width */
+    }
+}

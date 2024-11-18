@@ -1,0 +1,85 @@
+.carousel-container {
+  width: 90%; /* Make sure the carousel takes up to 90% of the available width */
+  max-width: 1200px; /* Limit the maximum width of the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
+  padding-top: 50px;
+  position: relative;
+}
+
+.top-destinations-title {
+  text-align: center;
+  font-size: 3rem; /* Large font size */
+  color: #0400ff; /* Light blue color */
+  font-family: 'Georgia', serif; /* Cursive font (use Google Fonts if needed) */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 30px; /* Add some spacing between title and carousel */
+}
+
+.carousel-slide {
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%; /* Set image width to fill the container */
+  max-width: 1000px; /* Set a maximum width for the image to avoid it being too large */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.slick-slide {
+  transform: scale(0.9); /* Slightly shrink non-center slides */
+  opacity: 0.8; /* Dim non-center images */
+  padding: 0 10px; /* Add some spacing between images */
+}
+
+.slick-center .carousel-image {
+  transform: scale(1.1); /* Enlarge center image more significantly */
+  filter: brightness(70%); /* Reduce brightness of the center image */
+  opacity: 1; /* Full opacity for the center image */
+}
+
+.slick-center {
+  z-index: 2; /* Elevate the center slide */
+  transform: translateY(-20px); /* Move the center image slightly above */
+}
+
+.carousel-info {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.slick-slide:not(.slick-center) .carousel-image {
+  filter: blur(2px); /* Slightly blur the side images */
+  opacity: 0.6; /* Reduce opacity for side images */
+  transform: scale(0.9); /* Slightly reduce size of the side images */
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000; /* Change color of the prev/next arrows */
+}
+
+/* Make sure the carousel adapts to smaller screen sizes */
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 100%; /* Use full width on smaller screens */
+  }
+  
+  .carousel-image {
+      max-width: 100%; /* Ensure image size adjusts to the screen */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .top-destinations-title {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+}
